@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Omkar Nashte | Salesforce Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              mono: ['"Courier New"', 'Courier', 'monospace'],
+              sans: ['"Arial Black"', 'Arial', 'sans-serif'],
+            },
+            colors: {
+              'neo-black': '#1a1a1a',
+              'neo-white': '#f0f0f0',
+              'neo-yellow': '#ffde59',
+              'neo-blue': '#54a0ff',
+              'neo-red': '#ff6b6b',
+              'neo-purple': '#a55eea',
+            },
+            boxShadow: {
+              'neo': '5px 5px 0px 0px #000',
+              'neo-lg': '8px 8px 0px 0px #000',
+              'neo-sm': '3px 3px 0px 0px #000',
+              'neo-hover': '2px 2px 0px 0px #000',
+            },
+            animation: {
+              'blink': 'blink 1s step-end infinite',
+            },
+            keyframes: {
+              blink: {
+                '0%, 100%': { opacity: '1' },
+                '50%': { opacity: '0' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-white text-black antialiased overflow-x-hidden selection:bg-black selection:text-white">
+    <div id="root"></div>
+  </body>
+</html>
