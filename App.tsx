@@ -47,7 +47,7 @@ const LoadingScreen = ({ onComplete }: { onComplete: () => void }) => {
 
       if (currentStep >= steps) {
         clearInterval(timer);
-        setTimeout(onComplete, 200); // Slight delay before unmounting
+        onComplete();
       }
     }, intervalTime);
 
